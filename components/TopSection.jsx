@@ -11,7 +11,7 @@ const TopSection = () => {
             <Header />
             <div className={styles.wrapper}>
                 <div className={styles.header}>
-                    <p>Lose weight,<span> and change your life</span> with AI</p>
+                    <p>Lose weight and<span> change your life</span> with AI</p>
                 </div>
                 <div className={styles.description}>
                     <p>Let AI develop an end-end plan for you to reach your weight loss goals. Loving what the plan has done with you so far? Share it with a friend.</p>
