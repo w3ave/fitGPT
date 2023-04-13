@@ -9,15 +9,20 @@ export async function OpenAIStream(payload) {
 
     let counter = 0;
 
-    const { company, experience, skills, name, position } = payload.formData;
+    const { name, age, gender, height, activityLevel, weight, weightGoal, timeFrame, healthCon, diet} = payload.formData;
 
 
-    const prompt = `Hello, AI! I'm a cover letter writer and I need your help crafting a perfect 
-  letter for a job seeker named ${name}. They're applying to work at ${company} as a ${position}, and they 
-  have ${experience} years of experience and the following skills: ${skills}. 
-  Can you please write a cover letter that highlights their relevant experience and skills, 
-  and explains why they're a great fit for the position? Make it engaging and persuasive, 
-  but keep it professional. Thanks!`
+    const prompt = `Please create a calorie deficit plan for  ${name} to lose weight, considering the following information:
+                Age: ${age}
+                Gender: ${gender}
+                Height: ${height}
+                Weight: ${weight}
+                Activity level: ${activityLevel}
+                Goal weight: ${weightGoal}
+                Time frame: ${timeFrame}
+                Dietary preferences or restrictions: ${diet}
+                Any medical conditions : ${healthCon}
+                `
 
     const config = {
         prompt,

@@ -3,7 +3,7 @@ import styles from '../styles/TopSection.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
 import GitHubButton from 'react-github-btn'
-import logo from "../public/cova-high-resolution-logo-color-on-transparent-background.png"
+import logo from "../public/FITGPT.png"
 
 
 const Header = () => {
@@ -19,7 +19,7 @@ const Header = () => {
                         className={styles.img}
                     />
                 </Link>
-                <GitHubButton href="https://github.com/orlando70/cover-letter-generator" data-size="large" aria-label="Star orlando70/cover-letter-generator on GitHub">Star</GitHubButton>
+                <GitHubButton href="https://github.com/w3ave/fitGPT" data-size="large" aria-label="Star w3ave/fitGPT on GitHub">Star</GitHubButton>
             </div>
         </>
     )

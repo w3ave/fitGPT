@@ -10,11 +10,16 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
   const [formData, setFormData] = useState({
-    company: '',
     name: '',
-    skills: '',
-    position: '',
-    experience: ''
+    age: '',
+    gender: '',
+    weight: '',
+    weightGoal: '',
+    timeFrame: '',
+    height: '',
+    activityLevel: '',
+    healthCon: '',
+    diet: '',
   });
   const [result, setResult] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -103,32 +108,52 @@ const App = () => {
         <ToastContainer />
         <div className={styles.wrapper}>
           <div className={styles.header}>
-            <p>Generate a <span>Cover Letter</span> in seconds.</p>
+            <p>Generate a <span>Weight Loss Plan</span> in seconds.</p>
           </div>
           <form className={styles.form} onSubmit={handleSubmit}>
-            <label>
-              Company:
-              <input type="text" name="company" value={formData.company} onChange={handleChange} />
-            </label>
-            <br />
             <label>
               Name:
               <input type="text" name="name" value={formData.name} onChange={handleChange} />
             </label>
             <br />
             <label>
-              Position:
-              <input type="text" name="position" value={formData.position} onChange={handleChange} />
+              Age:
+              <input type="number" name="age" value={formData.age} onChange={handleChange} />
             </label>
             <br />
             <label>
-              Skills:
-              <textarea name="skills" placeholder='Outline relevant skills' value={formData.skills} onChange={handleChange} />
+              Gender:
+              <input type="text" name="gender" value={formData.gender} onChange={handleChange} />
             </label>
             <br />
             <label>
-              Years of Experience:
-              <input type="number" name="experience" value={formData.experience} onChange={handleChange} />
+              Weight:
+              <input type="text" name="weight" placeholder='Specify with kg or lbs' value={formData.weight} onChange={handleChange} />
+            </label>
+            <br />
+            <label>
+              Goal Weight:
+              <input type="text" name="weightGoal" placeholder='Specify with kg or lbs' value={formData.weightGoal} onChange={handleChange} />
+            </label>
+            <br />
+            <label>
+              Time Frame:
+              <input type="text" name="timeFrame" placeholder='How long you plan to achieve your goal weight' value={formData.timeFrame} onChange={handleChange} />
+            </label>
+            <br />
+            <label>
+              Diet:
+              <textarea name="diet" placeholder='Omnivore, Carnivore, Vegan, Keto, etc' value={formData.diet} onChange={handleChange} />
+            </label>
+            <br />
+            <label>
+              Activity Level:
+              <textarea name="activityLevel" placeholder='Sedentary, lightly active, moderately active, very active, or extremely active' value={formData.actitivityLevel} onChange={handleChange} />
+            </label>
+            <br />
+            <label>
+              Medical Conditions:
+              <textarea name="healthCon" placeholder='That may impact weight loss: Diabities, hypothyroidism, etc' value={formData.healthCon} onChange={handleChange} />
             </label>
             <br />
             <div className={styles.buttons}>

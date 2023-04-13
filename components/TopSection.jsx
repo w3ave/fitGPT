@@ -11,10 +11,10 @@ const TopSection = () => {
             <Header />
             <div className={styles.wrapper}>
                 <div className={styles.header}>
-                    <p>Supercharge your <span>job search</span> with AI</p>
+                    <p>Loose weight,<span> and change your life</span> with AI</p>
                 </div>
                 <div className={styles.description}>
-                    <p>Increase your chances of landing an interview by generating highly personalized and professional cover letter that are tailored to the specific job you are applying for.</p>
+                    <p>Let AI develop an end-end plan for you to reach your weight loss goals. Loving what the plan has done with you so far? Share it with a friend.</p>
                 </div>
                 <Link href="/generate">
                     <Button text={"Try it for free"} />

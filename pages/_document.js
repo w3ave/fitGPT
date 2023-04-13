@@ -10,12 +10,12 @@ export default function Document() {
         <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" />
         <meta
           name="description"
-          content="Generate your next Cover letter in seconds."
+          content="Generate your weight loss plan in seconds."
         />
         <meta property="og:site_name" content="https://cover-letter-generator-alpha.vercel.app/" />
         <meta
           property="og:description"
-          content="Generate your next Cover letter in seconds."
+          content="Generate your weight loss plan in seconds."
         />
       </Head>
       <body>
