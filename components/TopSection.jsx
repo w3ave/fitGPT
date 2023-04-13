@@ -20,6 +20,7 @@ const TopSection = () => {
                     <Button text={"Try it for free"} />
                 </Link>
                 <span>No Email. No Signup.</span>
+                <span>Please consult a health-care profressional before acting on the advive given.</span>
             </div>
         </div>
     )
